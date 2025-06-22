@@ -24,8 +24,8 @@ const Nav = ({openNav}:props) => {
   }, []);
 
   return (
-    <div className={`transition-all 
-    ${navbarBg ? "bg-black shadow-md" : "fixed"} p-10 px-16  h-16 w-full z-[100] fixed `}>
+    <div className={`transition-all text-white 
+    ${navbarBg ? "bg-black text-white shadow-md" : "fixed "} p-10 px-16 w-full z-[100] fixed `}>
       <div className="flex items-center justify-between  w-full">
 
        <div className="flex items-center space-x-2">
@@ -38,7 +38,7 @@ const Nav = ({openNav}:props) => {
        {
         navLinks.map((link)=>(
         <Link key={link.id} href={link.url}
-        className='text-white hover:text-rose-500 font-semibold transition-all duration-200 '>
+        className=' text-white text-lg hover:text-rose-500 font-semibold transition-all duration-200 '>
           <p>{link.label}</p>
         </Link>
         ))
