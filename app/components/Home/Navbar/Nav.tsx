@@ -1,6 +1,7 @@
+"use client"
 import { navLinks } from '@/app/constant/constant'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { GrTechnology } from 'react-icons/gr'
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -9,8 +10,22 @@ import { GiHamburgerMenu } from "react-icons/gi";
   }
 
 const Nav = ({openNav}:props) => {
+  const [navbarBg,setNavbarBg] = useState(false);
+
+  useEffect(()=>{
+   const handler =()=>{
+     if(window.scrollY >= 90) setNavbarBg(true);
+      if(window.scrollY < 90) setNavbarBg(false);
+   };
+   window.addEventListener("scroll",handler)
+
+   return ()=> window.removeEventListener("scroll",handler)
+
+  }, []);
+
   return (
-    <div className='transition-all p-10 px-16  h-12 w-full z-[100] fixed '>
+    <div className={`transition-all 
+    ${navbarBg ? "bg-black shadow-md" : "fixed"} p-10 px-16  h-16 w-full z-[100] fixed `}>
       <div className="flex items-center justify-between  w-full">
 
        <div className="flex items-center space-x-2">
