@@ -1,17 +1,50 @@
 import React from 'react'
+import Image from 'next/image'
+import heroImg1  from '../../../../public/heroImg.png'
+import google from '../../../../public/google.png'
+import linkedin from '../../../../public/inkdin.png'
+import { FaStar, FaRegStarHalfStroke } from "react-icons/fa6";
+import { Button } from "@/components/ui/button"
 
 const Hero = () => {
   return (
     <>
-    <div className="relative w-full h-[110vh] sm:h-screen bg-cover flex justify-center text-left  flex-col">
-     <div className="w-[90%] md:w-[80%] mx-auto items-center grid sm:grid-cols-1 lg:grid-cols-1  gap-5">
-
-    <h3 className='md:text-lg sm:text-sm font-bold text-blue-950'>Make the smart investment</h3>
-        <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold text-blue-950 leading-[2.5rem] md:leading-[3.5rem]'>
+    <div className="p-20 md:mt-20 sm:mt-10">
+     <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="w-[100%] md:w-[90%] mt-14">
+    <h3 className='md:text-xl sm:text-sm font-bold text-blue-950 mb-5'>Make the smart investment</h3>
+        <h1 className='text-2xl md:text-5xl font-bold text-blue-950 mb-5 leading-[1.5rem] md:leading-[3.5rem]'>
             Kickstart, Scale, and Thrive Faster with <span className='text-rose-200'>BlogApp</span></h1>
-        <p>This system will allow users to add new products, display the list of existing products,
+        <p className='text-sm md:text-lg '>This system will allow users to add new products, display the list of existing products,
              update product information, and delete products from the inventory. </p>
+    
+    <div className="md:grid sm:grid-cols-2 md:grid-cols-2 mt-10">
+       <div className="flex ">
+      <Image src={google} alt='googlelogo' width={80} height={80}/>
+      <div className="mt-4 ml-3">
+        <p className='flex font-bold text-xl'>4.5<span className='flex ml-3 text-yellow-400' ><FaStar /><FaStar /><FaStar /><FaStar /><FaRegStarHalfStroke /></span></p>
+      <p>Best Rated on google</p>
+      </div>
      </div>
+     <div className="flex">
+      <Image src={linkedin} alt='linkedin' width={80} height={80} />
+      <div className="mt-4 ml-3">
+        <p className='flex font-bold text-xl'>4.7<span className='flex ml-3 text-yellow-400' ><FaStar /><FaStar /><FaStar /><FaStar /><FaRegStarHalfStroke /></span></p>
+      <p>Best rated on linkedin</p>
+      </div>
+     </div>
+    </div>
+   
+
+     </div>
+    
+      <div className="md:w-[80%] ">
+        <Image src={heroImg1} alt='hero_img' className='w-[70%] md:w-[100%]'
+         width={500} height={20}/>
+      </div>
+       <Button className='md:w-60 sm:w-40 h-12 md:text-md sm:text-sm md:-mt-10 sm:mt-10 bg-green-800 '>Get Started</Button>
+      </div>
+     
     </div>
     </>
   )

@@ -24,12 +24,12 @@ const Nav = ({openNav}:props) => {
   }, []);
 
   return (
-    <div className={`transition-all text-white 
-    ${navbarBg ? "bg-black text-white shadow-md" : "fixed "} p-10 px-16 w-full z-[100] fixed `}>
+    <div className={`transition-all
+    ${navbarBg ? " text-black shadow-md" : "fixed "} p-10 px-16 w-full z-[100] fixed `}>
       <div className="flex items-center justify-between  w-full">
 
        <div className="flex items-center space-x-2">
-        <div className="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center">
+        <div className="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center text-white">
            <GrTechnology />
         </div>
         <h1 className="text-xl hidden sm:block md:text-2xl text-blue-800 font-bold">BlogApp</h1>
@@ -38,14 +38,14 @@ const Nav = ({openNav}:props) => {
        {
         navLinks.map((link)=>(
         <Link key={link.id} href={link.url}
-        className=' text-white text-lg hover:text-rose-500 font-semibold transition-all duration-200 '>
+        className='  text-lg hover:text-rose-500 font-semibold transition-all duration-200 '>
           <p>{link.label}</p>
         </Link>
         ))
        }
      </div>
-     <button className=' w-52 h-10 bg-blue-800 rounded-sm'>Create Account</button>
-     <GiHamburgerMenu onClick={openNav} className='h-8 w-8 cursor-pointer text-white lg:hidden'/>
+     <button className=' w-52 h-10 bg-blue-800 rounded-sm text-white'>Create Account</button>
+     <GiHamburgerMenu onClick={openNav} className='h-8 w-8 cursor-pointer  lg:hidden'/>
       </div>
     </div>
   )
