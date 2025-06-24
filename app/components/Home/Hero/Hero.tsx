@@ -38,7 +38,7 @@ const Hero = () => {
 
      </div>
     
-      <div className="md:w-[80%] ">
+      <div className="md:w-[80%] md:mb-2 sm:mb-5">
         <Image src={heroImg1} alt='hero_img' className='w-[70%] md:w-[100%]'
          width={500} height={20}/>
       </div>
