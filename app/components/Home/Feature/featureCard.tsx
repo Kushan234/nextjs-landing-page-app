@@ -1,5 +1,6 @@
 import { AlarmClock, ChartBarIncreasing, Pencil, TouchpadIcon } from 'lucide-react'
 import React from 'react'
+import Image from 'next/image'
 
 const featureList = [
     {
@@ -34,7 +35,16 @@ const featureCard = () => {
     <>
     <div className="">
         <div className="">
-            
+            {
+                featureList.map((items)=>(
+                    <div key={items.id} className="">
+                        <div className="">
+                            <Image src={items.icons} alt='icon' width={20}/>
+                            <h3>{items.title}</h3>
+                        </div>
+                    </div>
+                ))
+            }
         </div>
     </div>
     </>

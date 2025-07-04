@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import featureImg from '../../../../public/feature.png'
+
 const Feature = () => {
   return (
     <>
@@ -14,7 +15,7 @@ const Feature = () => {
         <div className="">
           <div className="grid grid-cols-2">
             <div className="">
-            
+    
             </div>
             <div className="">
               <Image src={featureImg} alt='featurelogo'/>
