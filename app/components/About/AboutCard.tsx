@@ -43,7 +43,7 @@ const AboutCard = () => {
 
   return (
     <>
-    <div className="mt-6 transition duration-500 ease-in-out ">
+    <div className="mt-6 transition duration-500 ease-in-out mb-20 ">
       <div className="border rounded-xl p-6 shadow-md md:w-[40rem] sm:w-[20rem]">
         <p className="text-gray-600 mb-8 text-lg">{user.comment}</p>
         <div className="flex items-center gap-4">
