@@ -15,7 +15,7 @@ const AboutCard = () => {
     },
      {
       id:2,
-      comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. corrupti minus vero rerum!",
+      comment: "The many intergrations that can be linked really help me see data from other tools i also use",
       name: "Joe Root",
        image: profile2 ,
       title: "Dev Ops @IT solutions"
@@ -45,7 +45,7 @@ const AboutCard = () => {
     <>
     <div className="mt-6 transition duration-500 ease-in-out mb-20 ">
       <div className="border rounded-xl p-6 shadow-md md:w-[40rem] sm:w-[20rem]">
-        <p className="text-gray-600 mb-8 text-lg">{user.comment}</p>
+        <p className="text-gray-600 mb-8 md:text-lg text-sm">{user.comment}</p>
         <div className="flex items-center gap-4">
           <Image
             src={user.image}

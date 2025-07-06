@@ -1,72 +1,85 @@
-import React from 'react'
-import Image from 'next/image'
-import featureImg from '../../../../public/feature.png'
-import { AlarmClock, ChartBarIncreasing, Pencil, TouchpadIcon } from 'lucide-react'
+import React from "react";
+import Image from "next/image";
+import featureImg from "../../../../public/feature.png";
+import {
+  AlarmClock,
+  ChartBarIncreasing,
+  Pencil,
+  TouchpadIcon,
+} from "lucide-react";
 
 const featureList = [
-    {
-        id:1,
-        icons: <TouchpadIcon size={24}/>,
-        title: "App Integration",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sed reiciendis perferendis, placeat ipsa mollitia quidem tenetur iste ut impedit numquam nisi labore deleniti porro quia at veniam, dignissimos explicabo!"
-    },
-     {
-        id:2,
-        icons: <ChartBarIncreasing  size={24}/>,
-        title: "Workflow Builder",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sed reiciendis perferendis, placeat ipsa mollitia quidem tenetur iste ut impedit numquam nisi labore deleniti porro quia at veniam, dignissimos explicabo!"
-    },
-     {
-        id:3,
-        icons: <Pencil  size={24}/>,
-        title: "Problem Solutions",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sed reiciendis perferendis, placeat ipsa mollitia quidem tenetur iste ut impedit numquam nisi labore deleniti porro quia at veniam, dignissimos explicabo!"
-    },
-     {
-        id:4,
-        icons: <AlarmClock  size={24}/>,
-        title: "Lifetime Access",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sed reiciendis perferendis, placeat ipsa mollitia quidem tenetur iste ut impedit numquam nisi labore deleniti porro quia at veniam, dignissimos explicabo!"
-    }
-]
+  {
+    id: 1,
+    icons: <TouchpadIcon />,
+    title: "App Integration",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sed reiciendis perferendis, placeat ipsa mollitia quidem tenetur iste ut impedit numquam nisi labore deleniti porro quia at veniam, dignissimos explicabo!",
+  },
+  {
+    id: 2,
+    icons: <ChartBarIncreasing  />,
+    title: "Workflow Builder",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sed reiciendis perferendis, placeat ipsa mollitia quidem tenetur iste ut impedit numquam nisi labore deleniti porro quia at veniam, dignissimos explicabo!",
+  },
+  {
+    id: 3,
+    icons: <Pencil />,
+    title: "Problem Solutions",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sed reiciendis perferendis, placeat ipsa mollitia quidem tenetur iste ut impedit numquam nisi labore deleniti porro quia at veniam, dignissimos explicabo!",
+  },
+  {
+    id: 4,
+    icons: <AlarmClock />,
+    title: "Lifetime Access",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sed reiciendis perferendis, placeat ipsa mollitia quidem tenetur iste ut impedit numquam nisi labore deleniti porro quia at veniam, dignissimos explicabo!",
+  },
+];
 
 const Feature = () => {
   return (
     <>
-    <div className="mt-20 mb-20 ">
-      <div className="text-center mt-10 justify-center">
-        <h1 className='text-2xl font-bold '> Key Features Of The Product</h1>
-        <p className='p-2 text-lg '>Our product stands out with its high performance,
-           delivaring blazing-fast speeds and seamless multitasking </p>
- 
-        <div className="p-10 px-20">
-          <div className="grid grid-cols-2">
+      <div className="mt-20 mb-10 ">
+        <div className="text-center mt-10 justify-center">
+          <h1 className="sm:text-lg md:text-2xl font-bold ">
+         
+            Key Features Of The Product
+          </h1>
+          <p className="p-2 md:text-lg sm:text-sm">
+            Our product stands out with its high performance, delivaring
+            blazing-fast speeds and seamless multitasking{" "}
+          </p>
 
-
-            <div className="grid grid-cols-2 gap-10  ">
-            {
-                featureList.map((items)=>(
-                   <div key={items.id} className="rounded-md shadow-xl p-10 flex flex-col bg-gray-50">
-                   <div className="bg-green-300 rounded-full absolute w-12 h-12 text-green-800 p-3">
+          <div className="p-5 md:p-10 md:px-20 ">
+            <div className="grid md:grid-cols-2">
+              
+              <div className=" md:grid-cols-2 grid grid-cols-2 gap-4 justify-center items-center">
+                {featureList.map((items) => (
+                  <div
+                    key={items.id}
+                    className="rounded-md shadow-xl md:p-10 p-5 flex flex-col bg-gray-50 relative"
+                  >
+                    <div className="bg-green-300 rounded-full absolute w-8 h-8 md:w-12 md:h-12 text-green-800 p-2 flex items-center justify-center ">
                       {items.icons}
-                      </div>
-                      <h2 className='text-lg font-semibold ml-3'>{items.title}</h2>
-                      <p className='text-sm mt-7 text-left'>{items.desc}</p>
                     </div>
-                 
-                ))
-            }
-            </div>
+                    <h2 className="md:text-lg sm:text-sm font-semibold ml-8">
+                      {items.title}
+                    </h2>
+                    <p className="text-xs md:text-base mt-7 text-left line-clamp-4 md:line-clamp-none">
+                      {items.desc}
+                    </p>
+                  </div>
+                ))}
+              </div>
 
-            <div className="w-[80%] mx-auto mt-10">
-              <Image src={featureImg} alt='featurelogo'/>
+              <div className="w-[80%] mx-auto mt-10">
+                <Image src={featureImg} alt="featurelogo" />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </>
-  )
-}
+  );
+};
 
-export default Feature
+export default Feature;
