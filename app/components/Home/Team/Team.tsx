@@ -8,7 +8,7 @@ import team2 from '../../../../public/profile5.jpg'
 const Team = () => {
   return (
     <>
-    <div className="md:p-20 p-10 md:mt-10 sm:mt-10 bg-gray-50 mb-10">
+    <div className="md:p-20 p-10 md:mt-10 sm:mt-10 bg-gray-50 ">
         <div className="grid md:grid-cols-2 grid-cols-1">
             <div className="md:w-[80%]">
                  <Button variant="outline" className='md:w-60 sm:w-40 h-12 md:text-lg sm:text-sm md:-mt-10 sm:mt-10 border-1
