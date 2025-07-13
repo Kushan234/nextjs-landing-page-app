@@ -8,32 +8,33 @@ export const navLinks =[
     },
     {
         id: 2,
-        url: "/features",
-        label: "Features",
+        url: "/About",
+        label: "About",
     },
     {
         id: 3,
-        url: "/services",
-        label: "Services",
+        url: "/Features",
+        label: "Features",
     },
     {
         id: 4,
+        url: "/Services",
+        label: "Services",
+    },
+    {
+        id: 5,
         url: "/Reviews",
         label: "Reviews", 
     },
     {
-        id: 5,
-        url: "/team",
+        id: 6,
+        url: "/Team",
         label: "Team",
     },
     {
-        id: 6,
-        url: "/pricing",
+        id: 7,
+        url: "/Pricing",
         label: "Pricing",
     },
-    {
-        id: 7,
-        url: "/contact",
-        label: "Contact",
-    }
+    
 ]

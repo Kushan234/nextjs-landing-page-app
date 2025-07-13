@@ -1,15 +1,15 @@
 "use client" 
 import React, { useEffect } from 'react'
 import Hero from './Hero/Hero'
-import About from './About/About'
-import Feature from './Feature/Feature'
-import Services from './Services/Services'
-import Reviews from './Reviews/Reviews'
-import Team from './Team/Team'
-import Pricing from './Pricing/Pricing'
-
+import Feature from '@/app/Features/page'
+import About from '@/app/About/page'
+import Services from '@/app/Services/page'
+import Reviews from '@/app/Reviews/page'
+import Team from '@/app/Team/page'
+import Pricing from '@/app/Pricing/page'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+
 
 
 const Home = () => {

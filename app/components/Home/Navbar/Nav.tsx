@@ -32,7 +32,7 @@ const Nav = ({openNav}:props) => {
         <div className="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center text-white">
            <GrTechnology />
         </div>
-        <h1 className="text-xl hidden sm:block md:text-2xl text-blue-800 font-bold">BlogApp</h1>
+        <h1 className="text-xl hidden sm:block md:text-2xl text-blue-800 font-bold">TechNest</h1>
        </div>
      <div className="hidden lg:flex items-center space-x-10">
        {

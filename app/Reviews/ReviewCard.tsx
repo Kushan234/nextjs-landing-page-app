@@ -1,8 +1,8 @@
 import React from "react";
-import profile1 from "../../../../public/profile1.jpg";
-import profile3 from "../../../../public/profile3.jpg";
-import profile4 from "../../../../public/profile4.jpg";
-import profile5 from "../../../../public/profile5.jpg";
+import profile1 from "../../public/profile1.jpg";
+import profile3 from "../../public/profile3.jpg";
+import profile4 from "../../public/profile4.jpg";
+import profile5 from "../../public/profile5.jpg";
 import { FaRegStarHalfStroke, FaStar } from "react-icons/fa6";
 import Image from "next/image";
 

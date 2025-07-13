@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import about from '../../../../public/about.png'
+import about from '../../public/about.png'
 import { Button } from "@/components/ui/button"
 import { ChevronRightIcon } from "lucide-react"
 import AboutCard from './AboutCard'

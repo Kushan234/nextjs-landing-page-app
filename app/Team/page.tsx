@@ -1,8 +1,8 @@
 import { Button } from '@/components/ui/button'
 import React from 'react'
 import Image from 'next/image'
-import team1 from '../../../../public/profile2.jpg'
-import team2 from '../../../../public/profile5.jpg'
+import team1 from '../../public/profile2.jpg'
+import team2 from '../../public/profile5.jpg'
 
 
 const Team = () => {

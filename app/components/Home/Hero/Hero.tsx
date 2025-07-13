@@ -13,11 +13,11 @@ const Hero = () => {
      <div className="grid grid-cols-1 md:grid-cols-2">
       <div data-aos="fade-up"
        className="w-[100%] md:w-[90%] mt-14">
-    <h3 className='md:text-xl sm:text-sm font-bold text-blue-950 mb-5'>Make the smart investment</h3>
+    <h3 className='md:text-xl sm:text-sm font-bold text-blue-950 mb-5'>  Empower Your Digital Future</h3>
         <h1 className='text-2xl md:text-5xl font-bold text-blue-950 mb-5 leading-[1.5rem] md:leading-[3.5rem]'>
-            Kickstart, Scale, and Thrive Faster with <span className='text-rose-200'>BlogApp</span></h1>
-        <p className='text-sm md:text-lg '>This system will allow users to add new products, display the list of existing products,
-             update product information, and delete products from the inventory. </p>
+            Launch, Grow, and Succeed with <span className='text-rose-200'>TechNest</span></h1>
+        <p className='text-sm md:text-lg '>  TechNest helps you bring your ideas to life—manage your products,
+           streamline updates, and stay ahead with our intuitive platform. </p>
     
     <div className="md:grid sm:grid-cols-2 md:grid-cols-2 mt-10">
        <div className="flex ">

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import featureImg from "../../../../public/feature.png";
+import featureImg from "../../public/feature.png";
 import {
   AlarmClock,
   ChartBarIncreasing,
