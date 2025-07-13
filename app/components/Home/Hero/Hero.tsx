@@ -11,7 +11,8 @@ const Hero = () => {
     <>
     <div className="p-20 md:mt-20 sm:mt-10">
      <div className="grid grid-cols-1 md:grid-cols-2">
-      <div className="w-[100%] md:w-[90%] mt-14">
+      <div data-aos="fade-up"
+       className="w-[100%] md:w-[90%] mt-14">
     <h3 className='md:text-xl sm:text-sm font-bold text-blue-950 mb-5'>Make the smart investment</h3>
         <h1 className='text-2xl md:text-5xl font-bold text-blue-950 mb-5 leading-[1.5rem] md:leading-[3.5rem]'>
             Kickstart, Scale, and Thrive Faster with <span className='text-rose-200'>BlogApp</span></h1>
@@ -32,17 +33,21 @@ const Hero = () => {
         <p className='flex font-bold text-xl'>4.7<span className='flex ml-3 text-yellow-400' ><FaStar /><FaStar /><FaStar /><FaStar /><FaRegStarHalfStroke /></span></p>
       <p>Best rated on linkedin</p>
       </div>
+      
      </div>
+      <Button className='md:w-60 sm:w-40 h-12 md:text-md sm:text-sm md:mt-10 sm:mt-10 bg-green-800 '>Get Started</Button>
     </div>
    
 
      </div>
     
-      <div className="md:w-[80%] md:mb-2 sm:mb-5">
-        <Image src={heroImg1} alt='hero_img' className='w-[70%] md:w-[100%]'
+      <div data-aos="fade-down"
+      data-aosdelay="150"
+       className="md:w-[80%] md:mb-2 sm:mb-5">
+        <Image  src={heroImg1} alt='hero_img' className='w-[70%] md:w-[100%]'
          width={500} height={20}/>
       </div>
-       <Button className='md:w-60 sm:w-40 h-12 md:text-md sm:text-sm md:-mt-10 sm:mt-10 bg-green-800 '>Get Started</Button>
+      
       </div>
      
     </div>

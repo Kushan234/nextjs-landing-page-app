@@ -1,8 +1,8 @@
 "use client"
 import React, { use, useEffect, useState } from 'react'
 import Image from 'next/image'
-import profile1 from '../../../public/profile1.jpg'
-import profile2 from '../../../public/profile2.jpg'
+import profile1 from '../../../../public/profile1.jpg'
+import profile2 from '../../../../public/profile2.jpg'
 const AboutCard = () => {
  
   const UserCard = [

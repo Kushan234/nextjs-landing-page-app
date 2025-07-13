@@ -52,7 +52,10 @@ const Feature = () => {
           <div className="p-5 md:p-10 md:px-20 ">
             <div className="grid md:grid-cols-2">
               
-              <div className=" md:grid-cols-2 grid grid-cols-2 gap-4 justify-center items-center">
+              <div data-aos='fade-right' 
+              data-aos-anchor-placement='top-center'
+              data-aos-delay="200" 
+               className=" md:grid-cols-2 grid grid-cols-2 gap-4 justify-center items-center">
                 {featureList.map((items) => (
                   <div
                     key={items.id}
@@ -71,7 +74,10 @@ const Feature = () => {
                 ))}
               </div>
 
-              <div className="w-[80%] mx-auto mt-10">
+              <div data-aos='fade-left' 
+              data-aos-anchor-placement='top-center'
+              data-aos-delay="400" 
+               className="w-[80%] mx-auto mt-10">
                 <Image src={featureImg} alt="featurelogo" />
               </div>
             </div>

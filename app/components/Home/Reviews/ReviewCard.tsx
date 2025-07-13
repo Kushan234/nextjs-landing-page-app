@@ -44,7 +44,10 @@ const reviewCard = [
 const ReviewCard = () => {
   return (
     <>
-      <div className="mt-10 ">
+      <div data-aos='zoom-in' 
+              data-aos-anchor-placement='top-center'
+              data-aos-delay="100" 
+       className="mt-10 ">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-5 bg-white ">
           {reviewCard.map((items) => (
             <div key={items.id} className="shadow-2xl flex md:p-5 sm p-2">

@@ -58,7 +58,10 @@ const Services = () => {
          <p className=' text-sm md:text-base text-left md:w-[70%] w-[90%] line-clamp-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod debitis laborum illum commodi repellendus quidem.
              Unde molestias vitae rem tempore esse. Ipsa accusantium corporis vero recusandae, autem ducimus sit ab.</p>         
         
-        <div className="md:mt-14 mt-10">
+        <div data-aos='fade-right' 
+              data-aos-anchor-placement='top-center'
+              data-aos-delay="100" 
+         className="md:mt-14 mt-10">
             <div className="md:grid-cols-3 grid grid-cols-3 gap-4 justify-center items-center ">
                 {
                     serviceList.map((service) => (

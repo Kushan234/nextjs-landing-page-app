@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import about from '../../../public/about.png'
+import about from '../../../../public/about.png'
 import { Button } from "@/components/ui/button"
 import { ChevronRightIcon } from "lucide-react"
 import AboutCard from './AboutCard'
@@ -10,7 +10,8 @@ const About = () => {
     <>
     <div className="md:mt-32 mb-10" >
         <div className="grid md:grid-cols-2 px-14 sm:grid-cols-1">
-            <div className="ml-14  ">
+            <div data-aos='zoom-in' data-aos-anchor-placement='top-center' 
+             className="ml-14  ">
                 <Image src={about} alt='about' width={600}/>
             </div>
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebook } from 'react-icons/fa6'
+import { FaFacebook, FaTwitter, FaX } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
@@ -44,7 +44,8 @@ const Footer = () => {
         <hr className='mt-5'/>
        <div className="flex justify-between items-center mt-5">
          <p className='md:text-base text-gray-500 text-xs'>Copyright © 2025 webdev.All rghts reserved</p>
-         <p className='md:flex md:items-center gap-3 md:text-base text-gray-500 text-xs mr-10'>social : <FaFacebook /></p> 
+         <p className='md:flex md:items-center gap-3 md:text-base text-gray-500 text-xs mr-10'>social :
+           <FaFacebook /> <FaTwitter /><FaX /></p> 
        </div>
     </div>
     </>

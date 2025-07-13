@@ -34,7 +34,10 @@ const Pricing = () => {
              <p className='md:text-base text-sm md:mt-4 mt-2 text-center md:px-60'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fugiat veritatis quisquam.
                  Ab adipisci quibusdam magnam sed quisquam delectus ducimus.   </p>
 
-                 <div className="md:flex grid grid-cols-3 mt-5 gap-2">
+                 <div data-aos='fade-up' 
+              data-aos-anchor-placement='top-center'
+              data-aos-delay="200" 
+                  className="md:flex grid grid-cols-3 mt-5 gap-2">
                     {
                         pricingTag.map((item) => (
                             <div key={item.id} className="md:w-[30%] sm:w-[50%] w-full bg-white border-t-4 border-rose-300 shadow-xl  rounded-xl md:p-10 p-5 md:m-5">

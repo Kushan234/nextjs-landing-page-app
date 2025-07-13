@@ -23,7 +23,10 @@ const Team = () => {
             </div>
 
        
-            <div className="grid grid-cols-2 md:grid-cols-2 gap-3 md:-ml-14 mt-10">
+            <div data-aos='fade-right' 
+              data-aos-anchor-placement='top-center'
+              data-aos-delay="100" 
+             className="grid grid-cols-2 md:grid-cols-2 gap-3 md:-ml-14 mt-10">
             <div>
               <Image src={team1} alt="team1" className="rounded-t-md w-[10rem] md:w-[20rem] md:h-52" />
               <div className="bg-red-400 md:w-[20rem] w-[8.63rem] rounded-b-md p-2 text-white px-3">
