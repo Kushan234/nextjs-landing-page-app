@@ -17,7 +17,7 @@ const About = () => {
 
             <div className="">
                  <Button variant="outline" className='md:w-60 sm:w-40 h-12 md:text-lg sm:text-sm md:-mt-10 sm:mt-10 border-1
-                  bg-transparent text-orange-500 font-bold mb-8 '>About us</Button>
+                  bg-transparent text-orange-500 font-bold mb-8 cursor-pointer'>About us</Button>
 
                   <h2 className='font-bold md:text-2xl sm:text-lg mb-5'>Everything You Need To Grow Your Business</h2>
 
@@ -26,7 +26,7 @@ const About = () => {
                      Perspiciatis nemo quos cumque ea laboriosam!</p>
 
                      <div className="ml-10 mt-5 font-medium ">
-                       <Button  variant="secondary" size="icon" className="size-8" >
+                       <Button  variant="secondary" size="icon" className="size-8 cursor-pointer" >
                     <p className='text-orange-500 font-bold'> Learn More</p>
                     <ChevronRightIcon className='text-orange-500 font-bold'/>
                      </Button>

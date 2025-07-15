@@ -12,7 +12,7 @@ const Team = () => {
         <div className="grid md:grid-cols-2 grid-cols-1">
             <div className="md:w-[80%]">
                  <Button variant="outline" className='md:w-60 sm:w-40 h-12 md:text-lg sm:text-sm md:-mt-10 sm:mt-10 border-1
-                  bg-transparent text-orange-500 font-bold mb-8 '>Our Team</Button>
+                  bg-transparent text-orange-500 font-bold mb-8 cursor-pointer'>Our Team</Button>
 
              <h1 className="md:text-2xl font-bold text-lg">Our Team of Exceptional Talent, Innovation, and Vision</h1>
 

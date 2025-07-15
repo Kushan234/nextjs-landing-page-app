@@ -35,7 +35,7 @@ const Hero = () => {
       </div>
       
      </div>
-      <Button className='md:w-60 sm:w-40 h-12 md:text-md sm:text-sm md:mt-10 sm:mt-10 bg-green-800 '>Get Started</Button>
+      <Button className='md:w-60 sm:w-40 h-12 md:text-md sm:text-sm md:mt-10 sm:mt-10 bg-green-800 cursor-pointer'>Get Started</Button>
     </div>
    
 
